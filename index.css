@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-color: #f7eedd;
+}
+
+.navigation{
+  background-color: #f7eedd;
+}
+
+:root {
+  --color-background: #f7eedd;
+  --color-text: #282137;
+  --color-banner: #b19cd9;
+  --color-hero: #f7eedd;
+  --color-categories: #d2d8ff;
+  --color-new-products: #d2ffe0;
+  --color-featured: #B8E986;
+  --color-footer: #e6ffe6;
+}
+
+.section-divider {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  pointer-events: none;
+  margin-top: -1px;
+}
+
+.section-divider svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.section-divider .shape-fill {
+  fill: currentColor;
+}
+
+/* Définition des couleurs de sections */
+.main-container {
+  background-color: var(--color-background);
+}
+
+/* Vous pouvez ajuster ces couleurs selon vos besoins */
+.hero-section {
+  background-color: var(--color-hero);
+  position: relative;
+  color: #d2d8ff; /* Couleur du SVG qui suivra */
+}
+
+.categories-section {
+  background-color: var(--color-categories);
+  position: relative;
+  color: #d2ffe0; /* Couleur du SVG qui suivra */
+}
+
+.new-products-section {
+  background-color: var(--color-new-products);
+  position: relative;
+  color: #B8E986; /* Couleur du SVG qui suivra */
+}
+
+.featured-products-section {
+  background-color: var(--color-featured);
+  position: relative;
+  color: #e6ffe6; /* Couleur du SVG qui suivra */
+}
+
+.footer {
+  background-color: var(--color-footer);
+  position: relative;
+}
